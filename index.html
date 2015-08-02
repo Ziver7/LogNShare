@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LogNShare Home</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="scripts.js"></script>
+<p id="connection_status"></p>
+
+<fb:login-button scope="public_profile,email" auto_logout_link="true" onlogin="loginStatus();"></fb:login-button>
+
+<br>
+Share current page
+<fb:share-button layout="button" id="share_current"></fb:share-button>
+
+<br>
+
+Share predetermined page
+<div class="fb-share-button" data-layout="button" data-href="https://en.wikipedia.org/wiki/Extra_Credits" id="FB_share_specific"></div>
+</html>
